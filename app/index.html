@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|PT+Serif:400,700,700i&amp;subset=cyrillic"
+	 rel="stylesheet">
+	<link rel="stylesheet" href="public/css/main.min.css">
+</head>
+
+<body>
+	<!-- Navigation menu -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-light px-0 py-2">
+				<a class="navbar-brand" href="#">
+					<img class="img" src="public/img/Logo.svg" alt="Ukit">
+				</a>
+
+				<button type="button" class="btn btn-outline-success header__btn px-4" data-toggle="modal" data-target="#form-modal">Заполнить
+					форму</button>
+
+				<button id="nav-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end pr-md-3" id="navbarNav">
+					<ul class="navbar-nav nav-list">
+						<li class="nav-list__item pl-md-2 pl-lg-3">
+							<a class="nav-link active" href="#main">Главная</a>
+						</li>
+						<li class="nav-list__item pl-md-2 pl-lg-3">
+							<a class="nav-link" href="#company">Компания</a>
+						</li>
+						<li class="nav-list__item pl-md-2 pl-lg-3">
+							<a class="nav-link" href="#news">Новости</a>
+						</li>
+						<li class="nav-list__item pl-md-2 pl-lg-3">
+							<a class="nav-link" href="#services">Услуги</a>
+						</li>
+						<li class="nav-list__item pl-md-2 pl-lg-3">
+							<a class="nav-link" href="#contacts">Контакты</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Popup form -->
+				<div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="form-modal-label" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<a href="#" class="modal-btn" data-dismiss="modal" aria-label="Close">Вернуться</a>
+							</div>
+							<div class="modal-body">
+								<h4 class="form-heading mb-4">Заполните форму</h4>
+								<form action="#">
+									<div class="form-group">
+										<input class="form-control" type="text" id="name" required>
+										<label class="form-label-placeholder" for="name">Имя</label>
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" id="email" required>
+										<label class="form-label-placeholder" for="email">Почта</label>
+									</div>
+									<div class="form-group mb-4">
+										<textarea type="textarea" rows="6" class="form-control" id="message" required></textarea>
+										<label class="form-label-placeholder" for="message">Сообщение</label>
+									</div>
+									<button type="submit" class="btn py-3 px-4 btn-success">Отправить</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Popup form -->
+				<hr class="nav-border-line">
+			</nav>
+		</div>
+	</div>
+	<!-- /Navigation menu -->
+
+	<!-- Text content -->
+	<div class="container top-content">
+		<div class="row align-items-start">
+			<div class="col-lg">
+				<figure class="top-content__figure">
+					<img class="img top-content__figure__img" src="public/img/1-sm.jpg" alt="Слово года по версии Оксфордских словарей"
+					 srcset="public/img/1.jpg 2x">
+					<figcaption class="top-content__figure__caption px-2">
+						В короткий список слов года также вошли ad blocker (блокировщик рекламы)
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-lg px-lg-0">
+				<h1 class="top-content__heading pl-3">Названо «слово года» по версии Оксфордских словарей</h1>
+				<div class="top-content__heading-description pl-3 mt-5">
+					В 2015 году словом года по версии составителей Оксфордских словарей стала пиктограмма, эмодзи под названием «Лицо
+					со слезами радости».
+				</div>
+				<div class="top-content__heading-post-description pl-3 mt-3">
+					<p>Составители провели исследование вместе со SwiftKey о частоте использования разных эмодзи в интернете. «Лицо со
+						слезами радости» оказалось самым популярным эмодзи в 2015 году. Например, в США он составил 17% от всех
+						написанных
+						эмодзи, а в Великобритании — 20%.</p>
+
+					<p>Кроме того, слово emoji, которое есть в английском с 1997 года, в 2015 году
+						стало употребляться примерно в три раза чаще.</p>
+				</div>
+				<div class="top-content__heading-additional-description pl-3 mt-3">
+					В короткий список слов года также вошли ad blocker («блокировщик рекламы»), brexit (возможный выход Великобритании
+					из состава Европейского союза), dark web (сегмент интернета, доступный через браузер Tor).
+				</div>
+				<div class="top-content__btn py-4 pl-3">
+					<button class="btn btn-success form-btn" data-toggle="modal" data-target="#form-modal">Заполнить форму</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Text content -->
+
+	<!-- Cards -->
+	<div class="container-fluid gray-bg py-5 my-5">
+		<div class="container cards">
+			<div class="row justify-content-around">
+				<div class="col-lg-3 col-md-12 my-3 card d-flex align-items-end">
+					<img class="card__img-layout" src="public/img/3.jpg">
+					<div class="card__overlay"></div>
+					<div class="d-flex flex-column align-items-start card__card-item mb-3">
+						<h4 class="card__card-item__heading mt-3">Слово года</h4>
+						<div class="card__card-item__description mt-2">Слово emoji стало употребляться примерно в три раза чаще</div>
+						<div class="card__card-item__price mt-3">$59</div>
+						<button class=" btn-link card__card-item__btn mt-3">Купить</button>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-12 my-3 card d-flex align-items-end">
+					<img class="card__img-layout" src="public/img/4.jpg">
+					<div class="card__overlay"></div>
+					<div class="d-flex flex-column align-items-start card__card-item mb-3">
+						<h4 class="card__card-item__heading mt-3">Лицо со слезами радости</h4>
+						<div class="card__card-item__description mt-2">В 2015 году словом года по версии составителей Оксфордских
+							словарей стала пиктограмма</div>
+						<div class="card__card-item__price mt-3">$112</div>
+						<button class=" btn-link card__card-item__btn mt-3">Купить</button>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-12 my-3 card d-flex align-items-end">
+					<img class="card__img-layout" src="public/img/5.jpeg">
+					<div class="card__overlay"></div>
+					<div class="d-flex flex-column align-items-start card__card-item mb-3">
+						<h4 class="card__card-item__heading mt-3">Оксфордский словарь</h4>
+						<div class="card__card-item__description mt-2">Исследование вместе со SwiftKey о частоте использования разных
+							эмодзи в интернете</div>
+						<div class="card__card-item__price mt-3">$83</div>
+						<button class=" btn-link card__card-item__btn mt-3">Купить</button>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-12 my-3 card d-flex align-items-end">
+					<img class="card__img-layout" src="public/img/2.jpg">
+					<div class="card__overlay"></div>
+					<div class="d-flex flex-column align-items-start card__card-item mb-3">
+						<h4 class="card__card-item__heading mt-3">SwiftKey</h4>
+						<div class="card__card-item__description mt-2">«Лицо со слезами радости» оказалось самым популярным эмодзи в 2015
+							году</div>
+						<div class="card__card-item__price mt-3">$9</div>
+						<button class=" btn-link card__card-item__btn mt-3">Купить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Cards -->
+
+	<!-- Form  -->
+	<div class="container form-section py-4 mb-5">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3">
+				<h4 class="form-heading mb-4">Заполните форму</h4>
+				<form action="#">
+					<div class="form-group">
+						<input class="form-control" type="text" id="name" required>
+						<label class="form-label-placeholder" for="name">Имя</label>
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="email" required>
+						<label class="form-label-placeholder" for="email">Почта</label>
+					</div>
+					<div class="form-group mb-4">
+						<textarea type="textarea" rows="6" class="form-control" id="message" required></textarea>
+						<label class="form-label-placeholder" for="message">Сообщение</label>
+					</div>
+					<button type="submit" class="btn py-3 px-4 btn-success">Отправить</button>
+				</form>
+			</div>
+			<div class="col-lg-3 pr-0">
+				<ol class="form-section__list pl-2">
+					<li class="form-section__list-item">Составители провели исследование вместе со SwiftKey</li>
+					<li class="form-section__list-item">«Лицо со слезами радости» оказалось самым популярным эмодзи в 2015 году.</li>
+					<li class="form-section__list-item">В США он составил 17% от всех написанных эмодзи</li>
+					<li class="form-section__list-item">В Великобритании — 20%</li>
+					<li class="form-section__list-item">Слово emoji стало употребляться примерно в три раза чаще</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!-- /Form  -->
+
+	<!-- Footer -->
+	<div class="container footer py-4 mt-5">
+		<div class="row">
+			<div class="col-lg">&copy; 2016 uKit</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<script src="public/js/scripts.min.js"></script>
+</body>
+
+</html>

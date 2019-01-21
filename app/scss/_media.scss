@@ -1,0 +1,97 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.header__btn {
+		order: 4;
+	}
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.header__btn {
+		order: 4;
+	}
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	.header__btn {
+		margin-left: 15rem;
+		order: 0;
+	}
+
+	.navbar-nav {
+		margin-top: 7rem;
+	}
+
+	.nav-list__item {
+		line-height: 3rem;
+		font-size: 2.5rem;
+		font-family: $heading-font;
+	}
+
+	.nav-link {
+		text-align: center;
+	}
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.header__btn {
+		margin-left: 0;
+	}
+
+	.card {
+		max-width: 90vw;
+	}
+	.card__img-layout {
+		height: auto;
+		max-width: 180vw;
+		transform: translateX(-26%);
+		-webkit-transform: translateX(-26%);
+		-moz-transform: translateX(-26%);
+		-ms-transform: translateX(-26%);
+		-o-transform: translateX(-26%);
+}
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(576px) {
+	.top-content__heading {
+		font-size: 2.5rem;
+	}
+
+}
+
+// ≤768px
+@include media-breakpoint-up(768px) {
+	.top-content {
+		margin-top: 1rem;
+	}
+
+	.cards {
+		padding: 0;
+	}
+}
+
+// ≤992px
+@include media-breakpoint-up(992px) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(1200px) {
+
+}

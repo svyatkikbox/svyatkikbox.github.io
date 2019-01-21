@@ -1,0 +1,21 @@
+$default-font: "PT Sans", sans-serif;
+$heading-font: "PT Serif", serif;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+$gutter: $grid-gutter-width;
+
+$success: #4BAE4F;
+$text: #263238;
+$text-gray: #ACB2B7;
+$navbar-light-color: #263238;
+$navbar-light-active-color: $success;
+$light-gray: #E6EAEB;
+$overlay: #0E1213;
+$border-radius: 6px;
+$border-width: 2px;
+$input-border-radius: $border-radius;
+
