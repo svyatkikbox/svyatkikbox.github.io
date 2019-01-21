@@ -19,6 +19,8 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+.top-content {margin-top: 1rem;}
+
 	.header__btn {
 		margin-left: 15rem;
 		order: 0;
@@ -77,10 +79,6 @@
 
 // ≤768px
 @include media-breakpoint-up(768px) {
-	.top-content {
-		margin-top: 1rem;
-	}
-
 	.cards {
 		padding: 0;
 	}
